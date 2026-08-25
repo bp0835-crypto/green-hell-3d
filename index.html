@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Green Hell 3D v1.0</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="hud">
+    <div class="brand">GREEN HELL 3D <span>v1.0</span></div>
+    <div class="grid">
+      <div><b id="speed">0</b><small>km/h</small></div>
+      <div><b id="gear">N</b><small>GEAR</small></div>
+      <div><b id="lap">1</b><small>LAP</small></div>
+      <div><b id="lapTime">00:00.000</b><small>TIME</small></div>
+    </div>
+    <div class="sub">最佳：<span id="best">--:--.---</span>　進度：<span id="progress">0.0%</span></div>
+  </div>
+
+  <div id="help">
+    <b>操作</b><br>
+    W / ↑ 油門　S / ↓ 煞車 / 倒車<br>
+    A D / ← → 轉向　R 重置<br>
+    C 切換鏡頭　P 暫停
+  </div>
+
+  <div id="message">按 W / ↑ 起步</div>
+  <canvas id="game"></canvas>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
