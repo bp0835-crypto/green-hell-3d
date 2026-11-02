@@ -1,30 +1,19 @@
-# Green Hell 3D v1.0
+# Green Hell 3D v1.1 (Optimized)
 
-以「Sacks Prime Analyzer」同樣的逐版迭代方式製作的第一版 3D 賽車遊戲原型。
+以「Sacks Prime Analyzer」同樣的逐版迭代方式製作的 3D 賽車遊戲優化版。
 
-## v1.0
-- Three.js 3D 場景
-- Nordschleife 風格完整封閉賽道
-- 高低差
-- 車輛加速、煞車、轉向、倒車
-- 草地減速
-- 三種鏡頭
-- 圈速、最佳圈、速度、檔位、進度 HUD
-- 最佳圈寫入瀏覽器 localStorage
-- R 重置、P 暫停
-- 森林、路肩、起跑架
+## v1.1 新增功能與改進
+- **動態車輛姿態與貼地**：車輛現在會隨賽道高低差與坡度自動進行 Pitch / Roll 姿態傾斜。
+- **車輪動畫**：前輪隨轉向動態偏轉，四輪隨車速實時轉動。
+- **檢查點防作弊機制 (Checkpoints)**：新增賽道 Checkpoint 驗證，防止倒車或截彎取直橫跨草地刷單圈成績。
+- **物理與轉向平滑度提升**。
 
-## 執行
-因為使用 ES Module 與 Three.js CDN，請不要直接雙擊 file:// 開啟。
+## v1.0 基礎功能
+- Three.js 3D 場景與 Nordschleife 風格封閉賽道
+- 草地減速、三種鏡頭視角
+- 圈速、最佳圈、速度、檔位、進度 HUD 與 localStorage 紀錄
 
-最簡單：
-1. 在此資料夾開啟終端機
-2. 執行：python -m http.server 8080
-3. 瀏覽器開啟 http://localhost:8080
-
-## 下一版建議
-v1.1：更精確 Nordschleife 幾何、碰撞護欄、檢查點防作弊
-v1.2：車輛動力/輪胎/煞車溫度
-v1.3：AI 對手與計時賽
-v1.4：天氣、濕地、夜間
-v2.0：Windows/Android 打包
+## 執行方式
+1. 解壓縮檔案
+2. 開啟終端機並執行：`python -m http.server 8080`
+3. 瀏覽器訪問：`http://localhost:8080`
